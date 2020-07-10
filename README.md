@@ -5,13 +5,13 @@
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/athlonreg/archey-osx/master/bin/archey-en)" 
 ```
 
-![screen-en.png](https://raw.githubusercontent.com/athlonreg/archey-osx/master/screen/screen-en.png)
+![screen-en.png](https://cdn.jsdelivr.net/gh/athlonreg/archey-osx/screen/screen-en.png)
 
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/athlonreg/archey-osx/master/bin/archey)" 
 ```
 
-![screen-zh_CN.png](https://raw.githubusercontent.com/athlonreg/archey-osx/master/screen/screen-zh_CN.png)
+![screen-zh_CN.png](https://cdn.jsdelivr.net/gh/athlonreg/archey-osx/screen/screen-zh_CN.png)
 
 ## Installation/安装
 ```
