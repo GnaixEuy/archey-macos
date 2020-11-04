@@ -1,17 +1,17 @@
 # Archey for OS X
-`Fork`自[obihann](https://github.com/obihann)的一个`macOS`脚本，效果如图
+`Fork` 自 [obihann](https://github.com/obihann) 的一个 `macOS` 脚本，效果如图
 
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/athlonreg/archey-osx/master/bin/archey-en)" 
 ```
 
-![screen-en.png](https://raw.githubusercontent.com/athlonreg/archey-osx/master/screen/screen-en.png)
+![screen-en.png](https://cdn.jsdelivr.net/gh/athlonreg/archey-osx/screen/screen-en.png)
 
 ```
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/athlonreg/archey-osx/master/bin/archey)" 
 ```
 
-![screen-zh_CN.png](https://raw.githubusercontent.com/athlonreg/archey-osx/master/screen/screen-zh_CN.png)
+![screen-zh_CN.png](https://cdn.jsdelivr.net/gh/athlonreg/archey-osx/screen/screen-zh_CN.png)
 
 ## Installation/安装
 ```
@@ -30,7 +30,7 @@ $ echo "[[ -s ~/.bashrc ]] && source ~/.bashrc" >> ./.bash_profile
 $ source ./.bashrc && source ./.bash_profile 
 ```
 
-> 如果你是`oh-my-zsh`用户
+> 如果你是 `oh-my-zsh` 用户
 
 ```
 $ echo archey >> ./.zshrc #中文版
