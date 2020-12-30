@@ -41,7 +41,7 @@ osx_build="$(sw_vers -buildVersion)"
 # define OS Short Version 
 if [[ $(sw_vers -productVersion | awk -F '.' '{print $1"."$2}') == "10.15" ]] ; then
   codename="macOS Catalina"
-elif [[ $(sw_vers -productVersion | awk -F '.' '{print $1"."$2}') == "10.16" || $(sw_vers -productVersion | awk -F '.' '{print $1"."$2}') == "11.0" ]] ; then
+elif [[ $(sw_vers -productVersion | awk -F '.' '{print $1"."$2}') == "10.16" || $(sw_vers -productVersion | awk -F '.' '{print $1}') == "11" ]] ; then
   codename="macOS Big Sur"
 else
   codename=$(xxd -ps /Applications/Utilities/System\ Information.app/Contents/MacOS/System\ Information | tr -d '\n' | perl -nle "print $& if m{00$(sw_vers -productVersion | awk -F '.' '{printf $1"."$2}' | xxd -ps)00\K.*?00}" | xxd -r -p)
@@ -83,11 +83,11 @@ uptime="${uptime%', '}"
 uptime="${uptime:-${seconds} seconds}"
 
 # model
-if [[ "$(kextstat | grep "FakeSMC")" != "" || "$(kextstat | grep "VirtualSMC")" != "" ]]; then
-  model="Hackintosh (SMBIOS: $(sysctl -n hw.model))"
-else
-  model="$(sysctl -n hw.model)"
-fi
+# if [[ "$(kextstat | grep "FakeSMC")" != "" || "$(kextstat | grep "VirtualSMC")" != "" ]]; then
+  # model="Hackintosh (SMBIOS: $(sysctl -n hw.model))"
+# else
+model="$(sysctl -n hw.model)"
+# fi
 
 # System Variables
 User=$(osascript -e "computer name of (system info)")
