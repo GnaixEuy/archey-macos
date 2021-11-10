@@ -2,6 +2,8 @@
 
 修正问题：
 
+修复了xxd错误，增加了对macOS12 Monterey的支持
+
 ![screen-en.png](/screen/修正.png)
 
 ---
